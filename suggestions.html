@@ -57,14 +57,20 @@
 				<div class="wrapper">	
 					<div class="container-title"><h2>Make a suggestion</h2></div>
 					<div class = "contact">
-					<form action="" method="post">
-						First Name: <input type="text" name="first_name"><br>
-						Last Name: <input type="text" name="last_name"><br>
-						Email: <input type="text" name="email"><br>
-						Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-						<input type="submit" name="submit" value="Submit">
+					<form
+					  action="https://formspree.io/f/meqdybbq"
+					  method="POST">
+					  <label>
+					    Your email:
+					    <input type="email" name="email">
+					  </label>
+					  <label>
+					    Your message:
+					    <textarea name="message"></textarea>
+					  </label>
+					  <!-- your other form fields go here -->
+					  <button type="submit">Send</button>
 					</form>
-
 				</div>
 				</div>
 		</div>
