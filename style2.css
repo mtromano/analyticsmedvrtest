@@ -14,7 +14,7 @@
 body{
 	background: #FAF9FD;
 	margin: 0;
-	padding-bottom:500px; /* height of the footer */
+	padding-bottom:100px; /* height of the footer */
 }
 
 
@@ -26,6 +26,12 @@ html {
   overflow: scroll;
 
   overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.floating-link{
+	text-align: right;
+	margin-right: 50px;
+	font-size: 12px;
 }
 
 .wrapper{
@@ -105,7 +111,9 @@ html {
 	grid-template-columns: 20% 80%;
 }
 
-.main-content-suggestions{
+.suggestions-grid{
+	display: grid;
+	grid-template-columns:60% 40%;
 	padding-left: 100px;
 }
 .analytics-container .wrapper{
@@ -113,8 +121,47 @@ html {
 	padding-left: 100px;
 }
 .contact{
-	margin-top:150px;
+	margin-top:60px;
+
 }
+
+#submit {
+    background-color: #3E2B74;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #ffffff;
+  	width:170px;
+  	height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+#submit:hover {
+    border: none;
+    color:#3E2B74;
+    background:#C6FFF1;
+    border: #3E2B74;
+    border-style: solid;
+    border-width: 1px;
+   
+}
+
+textarea 
+{  
+ 	
+   font-size: 16px;   
+   border: #321B73;
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 5px;
+   resize:none;
+}
+
 .container-title{
 	position: relative;
 	background: #FAF9FD;
@@ -128,6 +175,7 @@ html {
 	padding-left: 10px;
 
 }
+
 
 .analytics-grid-container-row1{
 	display: grid;
@@ -222,7 +270,7 @@ h3{
  	display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .table-size1{
@@ -241,6 +289,10 @@ table{
   border-color: grey;
   color: #1A0064;
 
+}
+
+label{
+	font-weight: 600;
 
 }
 .proportion-text{
@@ -278,7 +330,7 @@ h4{
 }
 
 h5{
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 200;
 	color: #1A0064;
 }
